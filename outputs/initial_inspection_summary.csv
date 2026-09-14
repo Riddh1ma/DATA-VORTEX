@@ -1,0 +1,6 @@
+column_name,pandas_dtype,total_records,non_null_count,missing_count,missing_percentage,unique_values,min_value,max_value,mean_value,median_value,std_dev,observations_and_notes
+user_id,str,1500,1500,0,0.0,1500,N/A,N/A,N/A,N/A,N/A,"None (100% unique, format user_[a-z0-9]{8})"
+location,str,1500,1500,0,0.0,33,N/A,N/A,N/A,N/A,N/A,"Inconsistent naming: 'Singapore' lacks country suffix (unlike 32 other 'City, Country' entries); non-ASCII character in 'São Paulo, Brazil'"
+language,str,1500,1500,0,0.0,10,N/A,N/A,N/A,N/A,N/A,Uniform language distribution across geographic locations (potential synthetic data artifact)
+account_created,str,1500,1500,0,0.0,359,N/A,N/A,N/A,N/A,N/A,Stored as string (object); all dates within 2023; 6 calendar days have 0 registrations
+follower_count,int64,1500,1500,0,0.0,1481,109,49944,24964.02,24741.5,14185.48,"None detected (uniformly distributed [109, 49944])"
